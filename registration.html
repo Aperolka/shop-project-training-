@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="countainer header__wrapper">
+      <div class="header__img">
+        <a href="#"><img class="header__logo" src="img/logo.svg" alt="logo" width="44" height="38"></a>
+        <!--<input type="text" class="search">-->
+        <img src="img/search.svg" width="27" height="28" alt="loupe"> 
+      </div>
+      <ul class="header__list">
+        <li class="header__items"><button class="header__button">
+          <img src="img/meny.svg" alt="meny" width="32" height="23"></button>
+        </li>
+        <li class="header__items"><button class="header__button">
+          <img src="img/redistr.svg" alt="registration" width="29" height="29"></button>
+        </li>
+        <li class="header__items"><button class="header__button">
+          <img src="img/cart.svg" alt="cart" width="32" height="29"></button>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav-wrapper">
+      <h2 class="nav__header">menu</h2>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <h3 class="nav__title">man</h3>
+          <ul class="nav__list__category">
+            <li class="nav__item__item"><a class="nav__link" href="#">Accessories</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Bags</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Denim</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">T-Shirts</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item-woman">
+          <h3 class="nav__title">woman</h3>
+          <ul class="nav__list__category">
+            <li class="nav__item__item"><a class="nav__link" href="#">Accessories</a></li>
+            <li class="nav__item__item"><a class="nav__link"href="#">Jackets & Coats</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Polos</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">T-Shirts</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Shirts</a></li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item-kids">
+          <h3 class="nav__title">kids</h3>
+          <ul class="nav__list__category">
+            <li class="nav__item__item"><a class="nav__link" href="#">Accessories</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Jackets & Coats</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Polos</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">T-Shirts</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Shirts</a></li>
+            <li class="nav__item__item"><a class="nav__link" href="#">Bags</a></li>
+          </ul>
+        </li>
+      </ul>  
+    </nav>
+  </header>
+  <main>
+    <section class="title-wrapper">
+      <h1 class="title__text countainer">registration</h1>
+    </section>
+    <section class="registration countainer">
+      <section class="redistration__form">
+        <form action="" method="post">
+          <legend class="legend">Your Name</legend>
+          <input class="form" type="text" placeholder="First Name">
+          <input class="form" type="text" placeholder="Last Name">
+          <div class="registration__gender">
+            <input class="radio-input" type="radio" id="gender1" 
+            name="gender" value="male">
+            <label class="radio-label" for="gender1">Male</label>
+            <input class="radio-input" type="radio" id="gender2" 
+            name="gender" value="Female">
+            <label class="radio-label" for="gender2">Female</label>
+          </div>
+          <legend class="legend">Login details</legend>
+          <input class="form" type="email" placeholder="Email"> 
+          <input class="form" type="password" placeholder="Password">
+          <p class="registrarion__text"> Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+          <button type="submit" class="registration__button">join now</button>
+        </form>
+
+      </section>
+      <section class="perks">
+        <h2 class="perks__header">loyalty has its perks</h2>
+        <p class="perks__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+        <ul class="perks__list">
+          <li class="perks__item">15% off welcome offer
+          </li>
+          <li class="perks__item">Free shipping, returns and exchanges on all orders
+          </li>
+          <li class="perks__item">$10 off a purchase on your birthday
+          </li>
+          <li class="perks__item">Early access to products</li>
+          <li class="perks__item">Exclusive offers & rewards</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__wrapper-wrapper">
+      <div class="footer__wrapper">
+        <div class="footer__intro">
+          <div class="footer__image-wrapper">
+            <img class="footer__image" src="./img/sub-women.png" alt="women" width="96" height="96">
+          </div> 
+          <div class="footer__text-wraper">
+            <p class="footer__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span class="footer__italic">a pulvinar purus condimentum“</span></p>
+          </div>
+        </div>
+        <div class="footer__form">
+          <h2 class="footer__header">subscribe 
+            <span class="footer__header-text">for our newletter and promotion</span> 
+          </h2>
+          <div class="footer__form-wrapper">
+            <input class="footer__email" type="email" name="" id="" placeholder="Enter Your Email">
+            <button class="footer__button" type="submit">Subscribe</button>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section class="footer__footer">
+      <div class="footer__footer-wrapper countainer">
+        <p class="footer__footer-text">&copy; 2021  Brand  All Rights Reserved.</p>
+      <ul class="footer__list">
+        <li class="footer__items"><a href="#"><img src="./img/footer-facebook.svg" alt="facebook"></a</li>
+        <li class="footer__items"><a href="#"><img src="./img/footer-instagram.svg" alt="instagram"></a></li>
+        <li class="footer__items"><a href="#"><img src="./img/footer-pinterest.svg" alt="pinterest"></a></li>
+        <li class="footer__items"><a href="#"><img src="./img/footer-twitter.svg" alt="twitter"></a></li>
+      </ul>
+    </section>
+      </div>
+  </footer>
+</body>  
