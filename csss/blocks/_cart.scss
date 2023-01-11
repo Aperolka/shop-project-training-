@@ -1,0 +1,145 @@
+.cart__header {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+.cart--product {
+  display: flex;
+}
+
+.cart__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:var(--cart-text-color);
+  padding-top: 6px;
+}
+
+.cart__text-sub {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.cart__text-text,
+.cart__text-sub {
+  text-transform: uppercase;
+}
+
+.cart__price {
+  color: #EF5B70;
+}
+
+.cart__button {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color:#4A4A4A;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+}
+
+.cart__button-form {
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  margin-top: 21px;
+  width: 105px;
+}
+
+
+.cart__button-button {
+  color: #FFFFFF;
+  background-color: var(--pink-dark-color);
+}
+
+.cart__legend {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.cart__header-text {
+  display: block;
+}
+
+.cart__list {
+  margin-top: 96px;
+}
+
+.cart__item {
+  display: flex;
+  margin-top: 40px;
+  box-shadow: 17px 19px 24px 0px #00000021;
+}
+
+.cart__list__characters-wrapper {
+  min-width: 390px;
+  padding: 22px 0 0 31px;
+  position: relative;
+}
+
+.cart__list__characters-wrapper::before {
+  position: absolute;
+  content: url(../img/cart-cross.svg);
+  right: 30px;
+  top: 31px;
+}
+
+.cart__list__characters {
+  margin-top: 42px;
+}
+
+.cart__buttons {
+  margin: 72px 0 126px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 113px;
+}
+
+.cart__form-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__checkout {
+  width: 360px;
+  background-color: #F5F3F3;
+  margin-top: 57px;
+  position: relative;
+}
+
+.cart__checkout::before {
+  position:  absolute;
+  content: url(../img/cart-line.svg);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 100px;
+}
+
+
+.cart__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 39px 34px 21px 0;
+}
+
+.cart__button-wrapper {
+  padding: 17px 43px 42px 44px;
+}

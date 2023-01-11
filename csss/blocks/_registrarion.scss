@@ -1,0 +1,139 @@
+.title-wrapper {
+  padding-top: 58px;
+  padding-bottom: 60px;
+  background-color: var(--pink-background-title);
+}
+
+.title__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: var(--pink-dark-color);
+  text-transform: uppercase;
+}
+
+.registration {
+  display: flex;
+  margin-top: 64px;
+}
+
+.registration__form {
+  width: 360px;
+}
+
+.legend {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: rgba(34, 34, 34, 1);
+}
+
+.form {
+  min-width: 360px;
+  min-height: 45px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(164, 164, 164, 1);
+  margin-top: 21px;
+  outline: none;
+  color: #B1B1B1;
+}
+
+.registration__gender {
+  margin: 34px 0;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-label {
+  margin: 0 0 0 47px;
+  position: relative;
+  user-select: none
+}
+
+.radio-label::before {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(164, 164, 164, 1);
+  border-radius: 50%;
+  left: -34px;
+} 
+
+.radio-input:checked+.radio-label::before {
+  background-color: #4682B4;
+}
+
+.form::placeholder {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--grey-placeholder);
+}
+
+.registration__text {
+  width: 359px;
+  min-height: 39px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--grey-placeholder);
+  margin-top: 16px;
+}
+
+.registration__button {
+  width: 157px;
+  height: 50px;
+  background:var(--pink-dark-color);
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin: 39px 0 96px;
+}
+
+.perks {
+  margin-left: 128px;
+}
+
+.perks__header {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: var(--black-dark-color);
+  text-transform: uppercase;
+}
+
+.perks__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: var(--black-dark-color);
+  margin-top: 22px;
+}
+
+.perks__list {
+  margin-top: 5px;
+  margin-left: 44px;
+}
+
+.perks__item {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: var(--black-dark-color);
+  padding-top: 16px;
+  position: relative;
+}
+
+.perks__item::before {
+  position: absolute;
+  content: url(../img/perks.svg);
+  left: -38px;
+}
