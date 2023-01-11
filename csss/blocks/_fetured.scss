@@ -1,0 +1,154 @@
+.fetured__header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: var(--black-color);
+}
+
+.fetured__text {  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--grey-color);
+  text-align: center;
+}
+
+.fetured__list {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fetured__card {
+  width: 360px;
+  min-height: 581px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--semi-grey-color);
+  margin-bottom: 30px;
+
+}
+
+/* задаем стили для внутренних блоков fetured  */
+
+.fetured__img {
+  width: 360px;
+  height: 420px;
+}
+
+.fetured__wrapper-overlay {
+  position: relative;
+}
+
+.card__button {
+  display: none;
+  
+}
+
+.fetured__card:hover .fetured__wrapper-overlay::before {
+  position: absolute;
+  top: 0;
+  background: rgba(58, 56, 56, 0.86);
+  width: 100%;
+  min-height: 420px;
+  content: ''; 
+}
+
+
+
+.card__title-wrapper{
+  height: 100%;
+  padding: 25px 28px 20px 17px;
+}
+
+.card__header {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--black-dark-color);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: var(--grey-color);
+  margin-bottom: 17px;
+}
+
+.card__price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--pink-dark-color);
+}
+
+/* Кнопка пока скрыта */
+
+.card__button {
+  width: 139px;
+  height: 44px;
+  border: 1px solid var(--white-color);
+  background: rgba(58, 56, 56, 0.86);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--white-color);
+}
+
+
+
+
+.fetured__wrapper-overlay:hover .card__button {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.fetured__link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 18.5px;
+}
+
+.fetured__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--white-color);
+  background: var(--pink-dark-color);
+  text-decoration: none;
+  border: 1px solid #FF6A6A;
+  padding: 14.5px 38.5px 13.5px;
+  display: inline-block;  
+}
+
+@media (max-width: $tablet-width) {
+  .fetured__list {
+    margin-top: 72px;
+  }
+
+  .fetured__card {
+    margin-bottom: 17px
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .fetured__list {
+    margin-top: 64px;
+  }
+
+  .fetured__link-wrapper {
+    margin-top: 42px;
+  }
+}

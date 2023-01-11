@@ -1,0 +1,112 @@
+.stock__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 97px;
+}
+
+.stock__item {
+  width: 31.5%;
+  min-height: 260px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock__item-4 {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock__item--women {
+  background-image: url(../img/back-stock.png), url(../img/stock-img-1.jpg);
+}
+
+.stock__item--man {
+  background-image: url(../img/back-stock.png), url(../img/stock-img-2.jpg);
+}
+
+.stock__item--kids {
+  background-image: url(../img/back-stock.png), url(../img/stock-img-3.jpg);
+}
+
+.stock__item--accesories {
+  background-image:url(../img/back-stock-2.png), url(../img/stock-img-4.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.stock__item--women,
+.stock__item--man,
+.stock__item--kids {
+  margin: 0 0 30px;
+}
+
+.stock__header {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.stock__text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--pink-dark-color);
+}
+
+@media (max-width: $tablet-width) {
+  .stock__item {
+    min-height: 168px;
+  }
+
+  .stock__list {
+    margin-top: 20px;
+    margin-bottom: 156px;
+  }
+
+  .stock__item--women,
+  .stock__item--man,
+  .stock__item--kids {
+  margin: 0 0 19px;
+  background-size: cover;
+  }
+
+  .stock__text-wrapper {
+    margin: 60px 0px;   
+  }
+
+  .stock__item--accesories {
+    min-height: 116px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .stock__list {
+    flex-direction: column;
+  }
+
+  .stock__item {
+    width: 100%;
+  }
+
+  .stock__item--women,
+  .stock__item--man,
+  .stock__item--kids {
+    min-height: 247px;
+  }
+
+  .stock__item--accesories {
+    min-height: 111px;
+    background-position-x: center;
+  }
+}
